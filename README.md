@@ -6,7 +6,7 @@ Look at the tests in the folder TestsWithSingletonKernelContainer.
 
 
 ##Purpose##
-The goal of this spike is to find a way to share a Ninject kernel between unit tests whilst allow each test to redefine how object graphs are related.
+The goal of this spike is to find a way to share a Ninject kernel between unit tests whilst allow each test to redefine how object graphs are created.
 The most common example of this is a controller dependent on a business logic which is dependent on a repository.
 For a given unit test we want to return a mock of that repository instead of the concrete implementation.
 That mock repository should only exist for the life of the unit test.
